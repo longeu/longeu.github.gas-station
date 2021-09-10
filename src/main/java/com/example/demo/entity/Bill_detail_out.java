@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Calendar;
 import java.util.Date;
 
 @Data
@@ -19,9 +20,9 @@ public class Bill_detail_out {
     @Id
     @GeneratedValue
     private int id_billDetailOut;
-    private int id_warehouse;
+    private int id_whdetail;
     private int id_employee;
     private int id_gas;
-    private Date datetime;
+    private Calendar datetime = Calendar.getInstance();
     private int quantity;
 }

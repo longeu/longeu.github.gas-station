@@ -60,7 +60,7 @@ public class Bill_detail_inService {
         return "remove done id: " + id;
     }
 
-    public String deleteBillIns(Employee employee) {
+    public String deleteBillIns(Bill_detail_in billDetailIn) {
         repository.deleteAll();
         return "finish - delete all detail !! ";
     }

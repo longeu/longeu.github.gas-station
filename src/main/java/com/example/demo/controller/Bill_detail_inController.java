@@ -24,7 +24,7 @@ public class Bill_detail_inController {
     }
 
     //thêm hóa đơn mới
-    @PostMapping("/addNewBill")
+    @PostMapping("/addNewBillIn")
     public Bill_detail_in addNewBill(@RequestBody Bill_detail_in newBdi){
         return service.addNewBill(newBdi);
     }
@@ -55,7 +55,7 @@ public class Bill_detail_inController {
 
     //Xóa hết hđơn
     @DeleteMapping("/BillIns")
-    public String deleteEmployees (@RequestBody Employee employee){
-        return service.deleteBillIns(employee);
+    public String deleteBillIns (@RequestBody Bill_detail_in billDetailIn){
+        return service.deleteBillIns(billDetailIn);
     }
 }
